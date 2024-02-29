@@ -11,7 +11,7 @@ const Love = () => {
       <h4>Match with anyone around the world.</h4>
       <h4>Get your dream couple right now.</h4>
 
-      <button className="btn btn-warning mb-3"><h3>Find your parner now</h3></button>
+     <Link className=" text-decoration-none" href="/signup"><button className="btn btn-primary mt-3 mb-3 text-dark" ><h5>Create Account Now</h5></button></Link>
 
       <h4>Available on:</h4>
 
@@ -29,7 +29,7 @@ const Love = () => {
         <h6  className="text-white ">The Users that registered with honest mind</h6>
       </div>
 
-     <Link className=" text-decoration-none" href="/signup"><button className="btn btn-primary mt-3 mb-3 text-dark" ><h5>Create Account Now</h5></button></Link>
+      <button className="btn btn-warning mb-3"><h3>Find your parner now</h3></button>
             
       {/* <form id="registrationForm">
           <div>
