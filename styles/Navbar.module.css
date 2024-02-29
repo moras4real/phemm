@@ -1,0 +1,46 @@
+.navfixed {    
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+  }
+
+  .lovfixed {    
+    margin-top: 133px;
+  }
+
+  .lovsignin {    
+    margin-top: 210px;
+  }
+
+  .lovchat {    
+    margin-top: 310px;
+  }
+
+  .staticButton {
+    position: fixed; /* Set the position to fixed */
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+/* chat section */
+  .user {
+    color: red;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.admin {
+    color: blue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
