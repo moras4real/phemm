@@ -7,7 +7,7 @@ const Chat = () => {
   const [allMessages, setAllMessages] = useState([]);
 
   const [socket, setsocket] = useState("")
-  let endpoint = "http://localhost:4000"
+  let endpoint = "https://phem.vercel.app/"
 
 useEffect(() => {
     setsocket(socketClient(endpoint))   
