@@ -7,9 +7,7 @@ import style from '../../styles/Navbar.module.css'
 import Link from "next/link"
 import Endline from '../../component/Endline';
 
-const socket = io("https://phem.vercel.app", {
-  transports: ['websocket'],
- });
+const socket = io();
 
 
 
