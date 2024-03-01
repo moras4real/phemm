@@ -10,7 +10,9 @@ const Chat = () => {
   let endpoint = "https://phem.vercel.app/"
 
 useEffect(() => {
-    setsocket(socketClient(endpoint))   
+    setsocket(socketClient(endpoint, {
+      transports: ['websocket']
+    }))   
   },[])  
 
     useEffect(() => {
