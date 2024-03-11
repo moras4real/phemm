@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import socketClient from 'socket.io-client'
 import style from '../styles/Navbar.module.css'
-
+import baseUrl from './BaseUrl'
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [allMessages, setAllMessages] = useState([]);
 
   const [socket, setsocket] = useState("")
-  let endpoint = "https://phem.vercel.app"
-
+  let endpoint = baseUrl
 useEffect(() => {
     setsocket(socketClient(endpoint))   
   },[])  
