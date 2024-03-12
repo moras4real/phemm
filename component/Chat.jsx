@@ -28,7 +28,7 @@ useEffect(() => {
     }, [socket, allMessages]);
 
     const sendMessage = () => {
-        socket.emit('sendMsg', message);
+        socket.emit('sendMsg',{ content: message, from: 'user1' });
         setMessage('');
         
     };
@@ -39,7 +39,7 @@ useEffect(() => {
         <div>
             {allMessages.map((msg, index) => (
                 <div key={index} className={msg.from === 'user1' ? style.admin : style.user}>
-                {msg}
+                {msg.content}
               </div>
             ))}
             <input className="border border-primary"
